@@ -1,5 +1,8 @@
-# emp-connector Example
-A simplified connector example to the Enterprise Messaging Platform.
+# emp-connector
+
+[![Build Status](https://travis-ci.org/KusabiSensei/emp-connector.svg?branch=master)](https://travis-ci.org/KusabiSensei/emp-connector)
+
+A simplified connector to the Enterprise Messaging Platform.
 
 This example connector provides support for SSL, HTTP proxies and supports both the long polling and websocket
 streaming transports.  Easy subscription management and full support for event replay is provided.

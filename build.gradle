@@ -1,0 +1,31 @@
+plugins {
+  id 'eclipse'
+  id 'java-library'
+  id 'maven-publish'
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation 'org.cometd.java:cometd-java-client:4.0.6'
+}
+
+group = 'io.dickerson.emp-connector'
+version = '0.0.1-SNAPSHOT'
+description = 'Salesforce EMP Connector'
+sourceCompatibility = JavaVersion.VERSION_11
+
+java {
+  withJavadocJar()
+  withSourcesJar()
+}
+
+publishing {
+  publications {
+    maven(MavenPublication) {
+      from(components.java)
+    }
+  }
+}
